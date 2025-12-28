@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Weather</h1>
+  <button id="refreshBtn">Refresh</button>
+</header>
+
+<main class="app">
+
+  <section id="cities" class="cities"></section>
+
+  <button id="toggleAddCity">+ Add city</button>
+
+  <section id="weather" class="weather">
+    <p class="loader">Loading...</p>
+  </section>
+
+  <section id="add-city" class="add-city" style="display:none;">
+    <h3>Add city</h3>
+
+    <div class="input-wrapper">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <ul id="suggestions" class="suggestions"></ul>
+    </div>
+
+    <p id="cityError" class="error"></p>
+    <button id="addCityBtn">Add city</button>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
